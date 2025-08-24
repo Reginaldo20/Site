@@ -1,0 +1,252 @@
+:root{
+  --wrap-max: 1200px;     
+  --gap: 20px;            
+  --header-h: 40px;       
+  --col-esq-w: 240px;     
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family: Arial, sans-serif;
+  background:#f0f2f5;
+  color:#222;
+  transition: background .3s, color .3s;
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header.site-header{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(var(--wrap-max), calc(100% - (var(--gap) * 2)));
+  height: var(--header-h);
+  background:#007FA3;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-radius:0px;
+  box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:1000;
+  padding:0 0;
+}
+
+/* Logo cabeçalho */
+.header-logo{
+  width: var(--col-esq-w);
+  height: var(--header-h);
+  background:#007FA3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+}
+
+.header-logo img{
+  margin-top:0px;
+  margin-left:100%;
+  height:100px;
+  border-radius:0px;
+}
+
+
+/* Links e redes */
+.header-links{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  justify-content:flex-end
+}
+.header-links a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  transition: color .3s;
+}
+.header-links a:hover{
+  color:#ff6600;
+}
+.header-social{
+  width: var(--col-esq-w);
+  display:flex;
+  justify-content:center;
+  gap:16px;
+}
+.header-social a{
+  color:#fff;
+  text-decoration:none;
+  font-size:1.1rem;
+  transition: color .3s;
+}
+.header-social a:hover{
+  color:#ff6600;
+}
+
+/* Wrapper do corpo */
+.wrapper{
+  width: min(var(--wrap-max), calc(100% - (var(--gap) * 2)));
+  margin: calc(var(--header-h) + (var(--gap) * 1)) auto var(--gap);
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+
+.container{
+  display:flex;
+  min-height: 60vh;
+}
+
+.coluna{
+  padding:20px;
+  overflow-y:auto;
+}
+
+/* Coluna esquerda fixa     */
+.coluna.esquerda{
+  flex: 0 0 var(--col-esq-w);         
+  max-width: var(--col-esq-w);
+  border-right:3px solid #0FBF43;
+  background:#F0F8FF;
+  text-align:center;
+  position: sticky;
+  top:calc(var(--header-h) + var(--gap));
+  height: calc(100vh - var(--header-h) - var(--gap)*2);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* Caixas da coluna esquerda */
+.coluna.esquerda .box{
+  height:80px;
+  background:#C0C0C0;
+  border-radius:3px;
+  padding:15px;
+  margin:3px 0;
+  width:100%;
+  box-shadow:0 1px 5px rgba(0,0,0,.1);
+  cursor:pointer;
+  transition: transform .2s, box-shadow .2s;
+  text-decoration:none;
+  color:#C0C0C0;
+  font-weight:600;
+}
+.coluna.esquerda .box:hover{
+  transform: translateY(-3px);
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+/* cores diferentes para cada caixa */
+.coluna.esquerda .box:nth-child(1){ background:#001E3A; }
+.coluna.esquerda .box:nth-child(2){ background:#007FA3; }
+.coluna.esquerda .box:nth-child(3){ background:#001E3A; }
+.coluna.esquerda .box:nth-child(4){ background:#007FA3; }
+.coluna.esquerda .box:nth-child(5){ background:#001E3A; }
+.coluna.esquerda .box:nth-child(6){ background:#007FA3; }
+.coluna.esquerda .box:nth-child(7){ background:#001E3A; }
+.coluna.esquerda .box:nth-child(8){ background:#007FA3	; }
+
+.btn-toggle{
+  background:#ff6600;
+  border:none;
+  padding:10px 14px;
+  color:#fff;
+  cursor:pointer;
+  font-size:1rem;
+  border-radius:6px;
+  margin-top:auto;
+  margin-bottom:20px;
+}
+
+.coluna.direita{
+  flex:1;                 
+  background:#F0F8FF;
+}
+
+/* Tornar todos os vídeos responsivos */
+.servicos video {
+  width: 100%;        /* ocupa toda a largura do container */
+  max-width: 800px;   /* largura máxima do vídeo */
+  height: 200px;       /* mantém a proporção original */
+  border-radius: 8px; /* opcional: bordas arredondadas */
+  margin: 10px 0;     /* espaço acima e abaixo */
+  display: block;     /* remove espaçamento extra */
+}
+
+.servicos img {
+  width: 100%;        /* ocupa toda a largura do container */
+  max-width: 800px;   /* largura máxima do vídeo */
+  height: 400px;       /* mantém a proporção original */
+  border-radius: 8px; /* opcional: bordas arredondadas */
+  margin: 10px 0;     /* espaço acima e abaixo */
+  display: block;     /* remove espaçamento extra */
+}
+
+/* Dark mode */
+.dark-mode{ background:#222; color:#eee; }
+.dark-mode .wrapper{ background:#333; box-shadow:0 2px 8px rgba(255,255,255,.08); }
+.dark-mode header.site-header{ background:#111; }
+.dark-mode .coluna.esquerda{ background:#444; }
+.dark-mode .coluna.direita{ background:#555; }
+.dark-mode footer.site-footer{ background:#111; color:#eee; }
+
+/* Seções */
+.servicos{ max-width: 950px; margin:auto; }
+.servicos section{ margin-bottom:7px; padding:5px; border-radius:1px; color:#000000; }
+
+.servicos section#rpa{ background:#F2F2F2; }
+.servicos section#treinamentos{ background:#F2F2F2; }
+.servicos section#desenvolvimento{ background:#F2F2F2; }
+.servicos section#produtos{ background:#F2F2F2; }
+.servicos section#projetos{ background:#F2F2F2; }
+.servicos section#noticias{ background:#F2F2F2; }
+.servicos section#vagas{ background:#F2F2F2; }
+.servicos section#terceirizacao{ background:#F2F2F2; }
+
+.servicos video, .servicos img{
+  max-width:100%;
+  border-radius:8px;
+  margin:10px 0;
+}
+.servicos h2{ margin-bottom:12px; color:#007FA3; }
+/*.servicos h2{ background-color:#FFFFFF; }*/
+.servicos h2{ border-radius:3px; }
+
+.servicos h3{ margin-top:0; color:#000000; }
+.servicos ul{ margin:10px 0 0 20px; }
+.servicos li{ margin-bottom:8px; }
+.servicos hr{ border:none; height:2px; background:#001E3A; margin:20px 0; border-radius:1px; }
+
+/* Rodapé */
+footer.site-footer{
+  width: min(var(--wrap-max), calc(100% - (var(--gap) * 2)));
+  margin: var(--gap) auto;
+  background:#007FA3;
+  color:#fff;
+  text-align:center;
+  padding:16px;
+  border-radius:0px;
+  font-size:0.9rem;
+  box-shadow:0 -2px 8px rgba(0,0,0,.08);
+}
+
+@media (max-width: 720px){
+  .container{ flex-direction:column; }
+  .coluna.esquerda{
+    border-right:none;
+    border-bottom:3px solid red;
+    max-width:none;
+    flex: 0 0 auto;
+    position: relative;
+    top:0;
+    height:auto;
+    transform:none;
+  }
+  .header-logo, .header-social{
+    width:auto;
+  }
+}
