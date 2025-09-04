@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #000000;
+  background: #F2F2F2;
   color: #222;
   line-height: 1.6;
 }
@@ -29,8 +29,6 @@ header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
-
-
 header h1 {
   margin-left:10px;
   font-size: 20px;
@@ -47,7 +45,7 @@ header h1 {
   margin-top:0px;
   margin-left:0px;
   height:100px;
-  max'width:80px;
+  max-width:80px;
   border-radius:0px;
 }
 
@@ -105,7 +103,6 @@ nav ul li a:hover {
   }
 }
 
-
 /* CONTAINER */
 .container {
   padding: 20px 0rem 2rem;
@@ -116,14 +113,13 @@ nav ul li a:hover {
   border-radius:0px;
 }
 
-
 /* HERO */
 .hero {
-  background: linear-gradient(rgba(0,78,102,0.8), rgba(0,78,102,0.4)), url('https://picsum.photos/1600/700?tech') center/cover;
+  background: linear-gradient(rgba(0,78,102,0.6), rgba(0,78,102,0.0)), url('https://picsum.photos/1600/700?tech') center/cover;
   color: #fff;
   text-align: center;
-  padding: 100px 20px 100px;
-  margin-top:60px;
+  padding: 180px 20px 100px;
+  margin-top:40px;
   border-radius: 0px;
 }
 
@@ -141,7 +137,7 @@ nav ul li a:hover {
 }
 
 .hero .btn {
-  margin-bottom: 40px; /* ajusta o valor conforme precisar */
+  margin-bottom: 40px;
 }
 
 .btn:hover { background: #ffc107; }
@@ -153,7 +149,6 @@ section {
   background: #fff;
   box-shadow: 0 6px 20px rgba(0,0,0,0.05);
   transition: transform 0.3s;
-
 }
 
 section:hover {
@@ -172,23 +167,18 @@ section h2 {
 
 /* FLEX */
 .flex-section {
-  height:350px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
+  justify-content: center;	
 }
 
-.flex-section img{
-  max-width:100%;
-  width: 300px;
-  height:235px;	
-}
-
-
+.flex-section img,
 .flex-section video {
-  width: 40%;
-  height:230px;
+  max-width: 100%;
+  height: auto;
+  display: block;	
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   transition: transform 0.4s ease;
@@ -237,37 +227,14 @@ section h2 {
 }
 
 /* CORES POR SEÇÃO */
-#empresa {
-  background: linear-gradient(135deg, #ffffff, #f4f9ff);
-}
-
-#rpa {
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
-}
-
-#treinamento {
-  background: linear-gradient(135deg, #e8f5e9, #ffffff);
-}
-
-#sistemas {
-  background: linear-gradient(135deg, #f5f5f5, #ffffff);
-}
-
-#projetos {
-  background: linear-gradient(135deg, #e3f2fd, #ffffff);
-}
-
-#solucoes {
-  background: linear-gradient(135deg, #fff3e0, #ffffff);
-}
-
-#noticias {
-  background: linear-gradient(135deg, #ede7f6, #ffffff);
-}
-
-#carreiras {
-  background: linear-gradient(135deg, #e1f5fe, #ffffff);
-}
+#empresa { background: linear-gradient(135deg, #ffffff, #f4f9ff); }
+#rpa { background: linear-gradient(135deg, #e0f7fa, #ffffff); }
+#treinamento { background: linear-gradient(135deg, #e8f5e9, #ffffff); }
+#sistemas { background: linear-gradient(135deg, #f5f5f5, #ffffff); }
+#projetos { background: linear-gradient(135deg, #e3f2fd, #ffffff); }
+#solucoes { background: linear-gradient(135deg, #fff3e0, #ffffff); }
+#noticias { background: linear-gradient(135deg, #ede7f6, #ffffff); }
+#carreiras { background: linear-gradient(135deg, #e1f5fe, #ffffff); }
 
 /* RODAPÉ */
 footer {
@@ -292,7 +259,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* RESPONSIVIDADE */
+/* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -314,18 +281,40 @@ footer a:hover {
     display: block;
   }
 
+  /* Flex ajustado */
   .flex-section {
-
     flex-direction: column;
     text-align: center;
+    height: auto;
+  }
+
+  .flex-section img,
+  .flex-section video {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hero ajustado para mobile */
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 }
+
+/* Remover bordas arredondadas em alguns elementos */
 section,
 .card,
 .card img,
 .card video,
 .flex-section img,
 .flex-section video {
-    border-radius: 0 !important;
+  border-radius: 0 !important;
 }
-
