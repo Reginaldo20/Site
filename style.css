@@ -47,6 +47,7 @@ header h1 {
   margin-top:0px;
   margin-left:0px;
   height:100px;
+  max'width:80px;
   border-radius:0px;
 }
 
@@ -180,13 +181,13 @@ section h2 {
 
 .flex-section img{
   max-width:100%;
-  width: 400px;
+  width: 300px;
   height:235px;	
 }
 
 
 .flex-section video {
-  width: 60%;
+  width: 40%;
   height:230px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
