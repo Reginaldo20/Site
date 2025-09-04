@@ -273,7 +273,7 @@ footer a:hover {
     overflow: hidden;
   }
 
-  nav ul.show {
+  nav.active ul {
     display: block;
   }
 
