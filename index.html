@@ -1,140 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INÍCIO | PLANETA 365</title>
-  <link rel="icon" type="logo.png" sizes="16x16" href="logo.png">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INÍCIO | PLANETA 365</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Cabeçalho fixo -->
-  <header class="site-header">
-    <div class="header-logo">
-      <img src="logo.png" alt="Logo">
+
+<header>
+  <div class="header-logo">
+	<img src="logo.png" alt="Logo">
+  </div>
+
+  <h1>PLANETA 365</h1>
+  <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+  <nav>
+    <ul>
+      <li><a href="#empresa"><i class="fa-solid fa-building"></i> Empresa</a></li>
+      <li><a href="#rpa"><i class="fa-solid fa-robot"></i> RPA</a></li>
+      <li><a href="#treinamento"><i class="fa-solid fa-chalkboard-user"></i> Treinamentos</a></li>
+      <li><a href="#sistemas"><i class="fa-solid fa-code"></i> Desenvolvimento</a></li>
+      <li><a href="#projetos"><i class="fa-solid fa-diagram-project"></i> Projetos</a></li>
+      <li><a href="#solucoes"><i class="fa-solid fa-lightbulb"></i> Soluções</a></li>
+      <li><a href="#noticias"><i class="fa-solid fa-newspaper"></i> Notícias</a></li>
+      <li><a href="#carreiras"><i class="fa-solid fa-briefcase"></i> Carreiras</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+              <h1 class="title">Soluções tecnológicas para resultados <span style="color:var(--accent)">eficientes</span>, <span style="color:#2dd4bf">inteligentes</span> e <span style="color:#a3e635">sustentáveis</span>.</h1>
+<!--
+      <h2>Inovação que Impulsiona o Futuro</h2>
+      <p>Soluções tecnológicas inteligentes para transformar a sua empresa.</p>
+-->
+      <a href="#footer" class="btn">Entre em Contacto</a>
     </div>
-	<div class="header-mudatema">
+  </section>
 
-	</div>
 
-	<div class="header-nomeEmpresa">
-	  <h2>PLANETA 365</h2>
-	</div>
-	
-    <div class="header-links">
-      <a href="#rpa">Início</a>
-      <a href="#treinamentos">WoNa</a>
+
+<div class="container">
+  <!-- APRESENTAÇÃO -->
+  <section id="empresa">
+    <h2>Quem Somos</h2>
+    <div class="flex-section">
+      <div class="text">
+        <p>A <b>Planeta 365</b> oferece soluções tecnológicas inovadoras para impulsionar empresas. Atuamos em <b>automação, treinamento e desenvolvimento</b>, transformando processos complexos em resultados eficientes, inteligentes e sustentáveis.</p>
+      </div>
+      <img src="logo.png" alt="Apresentação da empresa">
     </div>
-    <div class="header-social">
-      <a href="https://chat.whatsapp.com/CDwdzMDa5ii9x415pVnK1T?mode=ems_share_c" target="_blank">WhatsApp</a>
-      <a href="https://facebook.com/fake" target="_blank">Facebook</a>
+  </section>
+
+  <!-- RPA -->
+  <section id="rpa">
+    <h2>Automação Robótica de Processos (RPA)</h2>
+    <div class="flex-section">
+      <div class="text">
+        <ul>
+          <li>Registro automático de faturas e extratos bancários</li>
+          <li>Geração de relatórios, contratos e cartas</li>
+          <li>Digitalização e automação de processos administrativos</li>
+        </ul>
+      </div>
+      <video autoplay muted loop controls>
+        <source src="3129671-uhd_3840_2160_30fps.mp4" type="video/mp4">
+      </video>
     </div>
-  </header>
+  </section>
 
-  <!-- Corpo -->
-  <main class="wrapper">
-    <div class="container">
-      <aside class="coluna esquerda">
-        <a href="#rpa" class="box">Automação RPA</a>
-        <a href="#treinamentos" class="box">Treinamentos</a>
-        <a href="#desenvolvimento" class="box">Desenvolvimento</a>
-        <a href="#produtos" class="box">Produtos</a>
-        <a href="#projetos" class="box">Projetos</a>
-        <a href="#noticias" class="box">Notícias</a>
-        <a href="#vagas" class="box">Vagas de Emprego</a>
-      </aside>
-
-      <section class="coluna direita">
-        <div class="servicos">
-
-          <section id="rpa">
-            <h2>Automação RPA🤖</h2>
-            <video controls>
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-              Seu navegador não suporta vídeo.
-            </video>
-            <ul>
-              <li>Registo automático de faturas e extratos bancários;</li>
-              <li>Geração de relatórios, contratos e cartas de forma automatizada;</li>
-              <li>Organização digital de arquivos e processos administrativos.</li>
-            </ul>
-            <p><em>"Transforme processos manuais em automação inteligente!"</em></p>
-			<hr>
-          </section>
-
-          <section id="treinamentos">
-            <h2>Treinamentos Profissionais💡</h2>
-            <img src="exel1.jpg" alt="Treinamentos">
-            <ul>
-              <li>Excel, SQL Server, tecnologias modernas e Power Platform;</li>
-              <li>Criação de Dashboards interativos e relatórios dinâmicos;</li>
-              <li>Capacitação em análise de dados e automação de processos.</li>
-            </ul>
-            <p><em>"Aprender é investir no seu futuro!"</em></p>
-            <hr>
-          </section>
-
-          <section id="desenvolvimento">
-            <h2>Desenvolvimento de Sistemas💻</h2>
-            <img src="https://via.placeholder.com/800x300?text=Desenvolvimento" alt="Desenvolvimento">
-            <ul>
-              <li>Soluções web e desktop personalizadas;</li>
-              <li>Sistemas de gestão e aprovação de pedidos;</li>
-              <li>Plataformas de análise e monitorização financeira.</li>
-            </ul>
-            <p><em>"Soluções inteligentes para seu negócio crescer!"</em></p>
-            <hr>
-          </section>
-
-          <section id="produtos">
-            <h2>Nossos Produtos</h2>
-            <img src="https://via.placeholder.com/800x300?text=Produtos" alt="Produtos">
-            <p>Apresentamos produtos inovadores e soluções digitais que otimizam processos empresariais.</p>
-          </section>
-
-          <section id="projetos">
-            <h2>Nossos Projetos</h2>
-            <img src="https://via.placeholder.com/800x300?text=Projetos" alt="Projetos">
-            <p>Projetos desenvolvidos para clientes de diversos setores, focados em automação e integração.</p>
-          </section>
-
-          <section id="noticias">
-            <h2>Notícias</h2>
-            <img src="https://via.placeholder.com/800x300?text=Notícias" alt="Notícias">
-            <p>Acompanhe novidades, lançamentos e atualizações da Planeta Tech e do setor de tecnologia.</p>
-          </section>
-
-          <section id="vagas">
-            <h2>Vagas de Emprego</h2>
-            <img src="https://via.placeholder.com/800x300?text=Vagas+de+Emprego" alt="Vagas">
-            <ul>
-              <li>Analista de Sistemas</li>
-              <li>Especialista em RPA</li>
-              <li>Desenvolvedor Web/Full Stack</li>
-            </ul>
-            <p><em>"Junte-se ao nosso time e cresça conosco!"</em></p>
-          </section>
-
-          <section id="terceirizacao">
-            <h2>Terceirização</h2>
-            <img src="https://via.placeholder.com/800x300?text=Terceirização" alt="Terceirização">
-            <p>Oferecemos serviços terceirizados de TI, suporte e gestão de processos para sua empresa.</p>
-            <p><em>"Foque no seu core business, nós cuidamos do resto!"</em></p>
-          </section>
-
-        </div>
-      </section>
+  <!-- TREINAMENTOS -->
+  <section id="treinamento">
+    <h2>Treinamentos Profissionais</h2>
+    <div class="flex-section">
+      <div class="text">
+        <ul>
+          <li>Excel, SQL Server, Power Platform e tecnologias modernas</li>
+          <li>Dashboards interativos e relatórios dinâmicos</li>
+          <li>Capacitação em análise de dados e automação</li>
+        </ul>
+      </div>
+      <img src="https://via.placeholder.com/500x300?text=Treinamentos" alt="Treinamentos Profissionais">
     </div>
-  </main>
+  </section>
 
-  <footer class="site-footer">
-    © 2025 Planeta 365 - Todos os direitos reservados | Desenvolvido por Planeta 365 🚀
-  </footer>
+  <!-- DESENVOLVIMENTO -->
+  <section id="sistemas">
+    <h2>Desenvolvimento de Sistemas</h2>
+    <div class="flex-section">
+      <div class="text">
+        <ul>
+          <li>Soluções web e desktop personalizadas</li>
+          <li>Sistemas de gestão e aprovação</li>
+          <li>Plataformas de monitorização financeira</li>
+        </ul>
+      </div>
+      <video controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <h2>Projetos Desenvolvidos</h2>
+    <div class="grid-section">
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Projeto+1"><p>Implementação de RPA em finanças.</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Projeto+2"><p>Dashboards interativos.</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Projeto+3"><p>Integração com SAP.</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Projeto+4"><p>Automação administrativa.</p></div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES -->
+  <section id="solucoes">
+    <h2>Soluções Inovadoras</h2>
+    <div class="grid-section">
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Solução+1"><p>Sistema de faturamento automático.</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Solução+2"><p>Plataforma de relatórios inteligentes.</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Solução+3"><p>Integração completa com SAP.</p></div>
+    </div>
+  </section>
+
+  <!-- NOTÍCIAS -->
+  <section id="noticias">
+    <h2>Notícias & Atualizações</h2>
+    <div class="grid-section">
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Notícia+1"><p>Lançamento de novo módulo de automação.</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Notícia+2"><p>Parceria com empresa internacional.</p></div>
+    </div>
+  </section>
+
+  <!-- CARREIRAS -->
+  <section id="carreiras">
+    <h2>Carreiras</h2>
+    <div class="grid-section">
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Vaga+1"><p>Analista de Sistemas</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Vaga+2"><p>Especialista em RPA</p></div>
+      <div class="card"><img src="https://via.placeholder.com/400x250?text=Vaga+3"><p>Desenvolvedor Full Stack</p></div>
+    </div>
+  </section>
+
+</div>
+
+<footer id="footer">
+  <p>&copy; 2025 Planeta 365. Todos os direitos reservados.    📧Email: <a href="mailto:planeta365mz@planeta365mz.com">planeta365mz@planeta365mz.com </a>| 📞Cel: +258 844226212 </p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-	
-
