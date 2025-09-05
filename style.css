@@ -42,10 +42,10 @@ header h1 {
 }
 
 .header-logo img{
-  margin-top:0px;
+  margin-top:25px;
   margin-left:0px;
-  height:100px;
-  max-width:80px;
+  height:70px;
+  max-width:90px;
   border-radius:0px;
 }
 
@@ -118,18 +118,15 @@ nav ul li a:hover {
   background: linear-gradient(rgba(0,78,102,0.6), rgba(0,78,102,0.0)), url('https://picsum.photos/1600/700?tech') center/cover;
   color: #fff;
   text-align: center;
-  padding: 180px 20px 100px;
+  padding: 100px 20px 100px;
   margin-top:40px;
   border-radius: 0px;
 }
 
-.hero h2 { font-size: 2.5rem; margin-bottom: 15px;}
-.hero p { font-size: 1.2rem; margin-bottom: 25px;}
-
 .btn {
   background: #ffdd57;
   color: #004e66;
-  padding: 2px 25px;
+  padding: 15px 25px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
